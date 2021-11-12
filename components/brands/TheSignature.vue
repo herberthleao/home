@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, Ref } from 'vue';
 
 export default defineComponent({
   props: {
@@ -31,9 +31,9 @@ export default defineComponent({
     }
   },
   setup() {
-    const splash = useSplash();
+    const splash: Ref<boolean> = useSplash();
 
-    const hideSplash = () => {
+    const hideSplash = (): void => {
       setTimeout(() => (splash.value = false), 5000);
     };
 

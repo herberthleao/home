@@ -13,17 +13,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, Ref, ref } from 'vue';
 
 export default defineComponent({
   setup() {
     // Mobile menu status.
-    const status = useMenu();
-    const menuIcon = ref(null);
+    const status: Ref<boolean> = useMenu();
+    const menuIcon: any = ref(null);
 
     // Changes menu status.
-    const toggleMenuStatus = () => {
-      const icon = menuIcon.value;
+    const toggleMenuStatus = (): void => {
+      const icon: any = menuIcon.value;
       if (status.value) {
         icon.classList.remove('open');
         status.value = false;
