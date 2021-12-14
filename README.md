@@ -1,7 +1,5 @@
 # Herberth Leão's Portfolio
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
-
 ## Setup
 
 Make sure to install the dependencies
