@@ -7,5 +7,13 @@ export default defineNuxtConfig({
       postcssOptions: require("./postcss.config.js")
     }
   },
-  css: ["@/assets/styles/app.scss"]
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: "@import \"@/assets/styles/app.scss\";"
+        }
+      }
+    }
+  }
 });

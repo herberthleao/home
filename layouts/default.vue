@@ -6,5 +6,6 @@
 
 <style lang="scss">
 .page-container-main {
+  background: $color-gray-dark;
 }
 </style>
