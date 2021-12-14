@@ -6,5 +6,6 @@ export default defineNuxtConfig({
     postcss: {
       postcssOptions: require("./postcss.config.js")
     }
-  }
+  },
+  css: ["@/assets/styles/app.scss"]
 });
