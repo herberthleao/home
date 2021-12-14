@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>
+    <views-the-splash />
+  </div>
 </template>
-
-<style lang="scss" scoped></style>
