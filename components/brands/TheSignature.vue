@@ -42,7 +42,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 // Styling for splash animation.
 .splash-container-brand {
   @apply m-auto;
@@ -75,5 +75,6 @@ export default defineComponent({
 
 // Styling for header logo.
 .page-header-brand {
+  // @apply ;
 }
 </style>
