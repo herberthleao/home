@@ -8,9 +8,10 @@
 .main-splash-container {
   @apply fixed;
   @apply flex;
-  @apply w-full;
   @apply h-screen;
   @apply max-h-screen;
+  @apply overflow-hidden;
+  @apply w-full;
 
   background: $color-gray-dark;
 }
