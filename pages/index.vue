@@ -5,26 +5,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  head () {
-    return {
-      title: "Herberth Leão"
-    }
-  },
-  setup () {
-    let splash = useSplash();
-
-    onMounted(() => {
-      setTimeout(() => {
-        splash = false
-        console.log(splash)
-      }, 5000)
-    })
+  setup() {
+    const splash = useSplash();
 
     return { splash };
   },
-
+  head() {
+    return {
+      title: "Herberth Leão"
+    };
+  }
 });
 </script>

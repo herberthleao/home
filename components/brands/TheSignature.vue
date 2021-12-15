@@ -1,5 +1,10 @@
 <template>
-  <svg :class="styling" viewBox="0 0 264.58332 131.93686" version="1.1">
+  <svg
+    :onanimationend="hideSplash()"
+    :class="styling"
+    viewBox="0 0 264.58332 131.93686"
+    version="1.1"
+  >
     <path
       style="
         fill: none;
@@ -24,6 +29,15 @@ export default defineComponent({
       type: String,
       required: true
     }
+  },
+  setup() {
+    const splash = useSplash();
+
+    const hideSplash = () => {
+      setTimeout(() => (splash.value = false), 5000);
+    };
+
+    return { hideSplash };
   }
 });
 </script>
@@ -35,7 +49,7 @@ export default defineComponent({
   @apply w-60;
 
   path {
-    animation: write 5s ease infinite;
+    animation: write 5s ease 1;
     stroke-dasharray: 1572;
     stroke-dashoffset: 1572;
   }
