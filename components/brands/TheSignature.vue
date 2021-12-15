@@ -75,6 +75,6 @@ export default defineComponent({
 
 // Styling for header logo.
 .page-header-brand {
-  // @apply ;
+  @apply h-10;
 }
 </style>
