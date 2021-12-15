@@ -1,5 +1,11 @@
 module.exports = {
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        lg: "4rem"
+      }
+    },
     extend: {}
   },
   plugins: [],
