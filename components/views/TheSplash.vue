@@ -7,7 +7,7 @@
 <style lang="scss" scoped>
 .main-splash-container {
   @apply fixed;
-  @apply flex;
+  @apply grid;
   @apply h-screen;
   @apply max-h-screen;
   @apply overflow-hidden;
