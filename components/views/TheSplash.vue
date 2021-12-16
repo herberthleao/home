@@ -12,6 +12,7 @@
   @apply max-h-screen;
   @apply overflow-hidden;
   @apply w-full;
+  @apply z-10;
 
   background: $color-gray-dark;
 }
