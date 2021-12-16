@@ -8,7 +8,11 @@
       </div>
       <div class="col-span-2">
         <nav class="grid">
-          <span ref="menuIcon" class="menu-hamb-icon justify-self-end lg:hidden" @click="toggleMenu">
+          <span
+            ref="menuIcon"
+            class="menu-hamb-icon justify-self-end lg:hidden"
+            @click="toggleMenu"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -39,10 +43,10 @@ export default defineComponent({
     const toggleMenu = () => {
       const icon = menuIcon.value;
       if (status) {
-        icon.classList.remove('open')
+        icon.classList.remove("open");
         status = false;
       } else {
-        icon.classList.add('open')
+        icon.classList.add("open");
         status = true;
       }
     };
