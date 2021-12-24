@@ -1,5 +1,6 @@
 # Ignore artifacts:
 .nuxt
+.output
 public
 
 *.md
