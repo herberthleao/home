@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   setup() {
@@ -23,10 +23,10 @@ export default defineComponent({
     const toggleMenu = () => {
       const icon = menuIcon.value;
       if (status.value) {
-        icon.classList.remove("open");
+        icon.classList.remove('open');
         status.value = false;
       } else {
-        icon.classList.add("open");
+        icon.classList.add('open');
         status.value = true;
       }
     };

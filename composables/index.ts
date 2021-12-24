@@ -1,9 +1,6 @@
-import { useState } from "#app";
+import { useState } from '#app';
 
-const useSplash = () => useState<boolean>("splash", () => true);
-const useMenu = () => useState<boolean>("menu", () => false);
+const useSplash = () => useState<boolean>('splash', () => true);
+const useMenu = () => useState<boolean>('menu', () => false);
 
-export {
-    useSplash,
-    useMenu
-}
+export { useSplash, useMenu };

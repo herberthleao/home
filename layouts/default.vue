@@ -7,71 +7,65 @@
   </div>
 </template>
 
-<style lang="scss">
-.page-container-main {
-  background: $color-gray-dark;
-}
-</style>
-
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   setup() {
     useMeta({
       meta: [
         {
-          name: "author",
-          content: "Herberth Leão, herberth.leao@pm.me"
+          name: 'author',
+          content: 'Herberth Leão, herberth.leao@pm.me'
         },
         {
-          name: "msapplication-TileColor",
-          content: "#DA532C"
+          name: 'msapplication-TileColor',
+          content: '#DA532C'
         },
         {
-          name: "msapplication-config",
-          content: "/assets/images/icons/favicons/browserconfig.xml"
+          name: 'msapplication-config',
+          content: '/assets/images/icons/favicons/browserconfig.xml'
         },
         {
-          name: "theme-color",
-          content: "#FFFFFF"
+          name: 'theme-color',
+          content: '#FFFFFF'
         },
         {
-          link: "apple-touch-icon",
-          sizes: "180x180",
-          href: "/assets/images/icons/favicons/apple-touch-icon.png"
+          link: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/assets/images/icons/favicons/apple-touch-icon.png'
         }
       ],
       link: [
         {
-          rel: "apple-touch-icon",
-          sizes: "180x180",
-          href: "/assets/images/icons/favicons/apple-touch-icon.png"
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/assets/images/icons/favicons/apple-touch-icon.png'
         },
         {
-          rel: "icon",
-          type: "image/png",
-          sizes: "32x32",
-          href: "/assets/images/icons/favicons/favicon-32x32.png"
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/assets/images/icons/favicons/favicon-32x32.png'
         },
         {
-          rel: "icon",
-          type: "image/png",
-          sizes: "16x16",
-          href: "/assets/images/icons/favicons/favicon-16x16.png"
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/assets/images/icons/favicons/favicon-16x16.png'
         },
         {
-          rel: "manifest",
-          href: "/assets/images/icons/favicons/site.webmanifest"
+          rel: 'manifest',
+          href: '/assets/images/icons/favicons/site.webmanifest'
         },
         {
-          rel: "mask-icon",
-          href: "/assets/images/icons/favicons/safari-pinned-tab.svg",
-          color: "#5BBAD5"
+          rel: 'mask-icon',
+          href: '/assets/images/icons/favicons/safari-pinned-tab.svg',
+          color: '#5BBAD5'
         },
         {
-          rel: "shortcut icon",
-          href: "/assets/images/icons/favicons/favicon.ico"
+          rel: 'shortcut icon',
+          href: '/assets/images/icons/favicons/favicon.ico'
         }
       ]
     });
@@ -82,3 +76,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style lang="scss">
+.page-container-main {
+  background: $color-gray-dark;
+}
+</style>
