@@ -9,7 +9,7 @@
       style="
         fill: none;
         stroke: #ffffff;
-        stroke-width: 2.97595;
+        stroke-width: 4;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 4;

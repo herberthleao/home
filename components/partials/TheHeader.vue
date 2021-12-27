@@ -1,23 +1,59 @@
 <template>
-  <header class="container py-5">
-    <div class="grid grid-cols-3 items-center">
-      <div>
+  <header ref="root" class="page-header-container">
+    <div class="grid grid-cols-3 items-center h-full">
+      <div class="col-span-1 align-self-start">
         <nuxt-link to="/" title="Herberth Leão">
           <brands-the-signature styling="page-header-brand" />
         </nuxt-link>
       </div>
-      <div class="col-span-2">
-        <nav class="grid">
-          <icons-header-menu />
-          <!--<div>
-            <nuxt-link to="">Sobre</nuxt-link>
-            <nuxt-link to="">Experiência</nuxt-link>
-            <nuxt-link to="">Trabalho</nuxt-link>
-            <nuxt-link to="">Educação</nuxt-link>
-            <nuxt-link to="">Contato</nuxt-link>
-          </div>-->
-        </nav>
+      <div class="col-span-2 content-center lg:hidden">
+        <icons-menu-hamb />
+      </div>
+      <div id="headerMenu" class="col-span-3 hidden lg:grid lg:col-span-2">
+        <the-header-nav />
       </div>
     </div>
   </header>
 </template>
+
+<style lang="scss">
+.page-header-container {
+  @apply container;
+  @apply max-h-screen;
+  @apply py-5;
+
+  color: $main-color;
+  font-family: $second-font;
+
+  a {
+    @apply max-w-max;
+  }
+}
+</style>
+
+<script lang="ts">
+import { defineComponent, ref, watch } from 'vue';
+
+export default defineComponent({
+  setup() {
+    const menuStatus = useMenu();
+    const root = ref(null);
+
+    // Toggles mobile menu when button is clicked.
+    watch(menuStatus, (currentStatus) => {
+      const header = root.value
+      const menu = header.querySelector('#headerMenu')
+
+      if (currentStatus) {
+        header.classList.add('h-screen');
+        menu.classList.remove('hidden')
+      } else {
+        header.classList.remove('h-screen');
+        menu.classList.add('hidden')
+      }
+    });
+
+    return { root };
+  }
+});
+</script>

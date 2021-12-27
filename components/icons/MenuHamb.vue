@@ -1,12 +1,14 @@
 <template>
-  <span
-    ref="menuIcon"
-    class="menu-hamb-icon justify-self-end lg:hidden"
-    @click="toggleMenu"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
+  <span class="grid self-center">
+    <span
+      ref="menuIcon"
+      class="menu-hamb-icon justify-self-end"
+      @click="toggleMenuStatus"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
   </span>
 </template>
 
@@ -20,7 +22,7 @@ export default defineComponent({
     const menuIcon = ref(null);
 
     // Changes menu status.
-    const toggleMenu = () => {
+    const toggleMenuStatus = () => {
       const icon = menuIcon.value;
       if (status.value) {
         icon.classList.remove('open');
@@ -31,21 +33,21 @@ export default defineComponent({
       }
     };
 
-    return { toggleMenu, menuIcon };
+    return { toggleMenuStatus, menuIcon };
   }
 });
 </script>
 
 <style lang="scss" scoped>
 .menu-hamb-icon {
-  color: $color-white;
+  color: $main-color;
   cursor: pointer;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   width: 1.5rem;
 
   span {
-    background: $color-white;
+    background: $main-color;
     border-radius: 9px;
     display: block;
     height: 0.1rem;
