@@ -1,5 +1,5 @@
 <template>
-  <span class="grid self-center">
+  <span class="grid">
     <span
       ref="menuIcon"
       class="menu-hamb-icon justify-self-end"

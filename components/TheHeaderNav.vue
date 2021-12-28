@@ -6,7 +6,7 @@
       <nuxt-link to="">Projetos</nuxt-link>
       <nuxt-link to="">Formações</nuxt-link>
       <nuxt-link to="">Artigos</nuxt-link>
-      <a class="container-nav-button" href="" download>Currículo</a>
+      <a class="container-nav-button" href="/contents/curriculum.pdf" download>Currículo</a>
     </nav>
   </div>
 </template>

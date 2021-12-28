@@ -1,12 +1,12 @@
 <template>
   <header ref="root" class="page-header-container">
     <div class="grid grid-cols-3 items-center h-full">
-      <div class="col-span-1 align-self-start">
+      <div class="col-span-1 self-start">
         <nuxt-link to="/" title="Herberth Leão">
           <brands-the-signature styling="page-header-brand" />
         </nuxt-link>
       </div>
-      <div class="col-span-2 content-center lg:hidden">
+      <div class="col-span-2 self-baseline lg:hidden">
         <icons-menu-hamb />
       </div>
       <div id="headerMenu" class="col-span-3 hidden lg:grid lg:col-span-2">
@@ -24,10 +24,6 @@
 
   color: $main-color;
   font-family: $second-font;
-
-  a {
-    @apply max-w-max;
-  }
 }
 </style>
 
