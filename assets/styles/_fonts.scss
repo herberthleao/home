@@ -1,33 +1,73 @@
 /**
+ * Maven Pro font
+ */
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('/assets/fonts/maven-pro/mavenpro-regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('/assets/fonts/maven-pro/mavenpro-medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('/assets/fonts/maven-pro/mavenpro-bold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('/assets/fonts/maven-pro/mavenpro-extrabold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('/assets/fonts/maven-pro/mavenpro-black.woff2') format('woff2');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('/assets/fonts/maven-pro/mavenpro-regular.woff2') format('woff2');
+    font-weight: 900;
+}
+
+/**
  * Fira Code font
  */
 
 @font-face {
     font-family: 'Fira Code';
-    src: url('/assets/fonts/firacode-light.woff2') format('woff2');
+    src: url('/assets/fonts/fira-code/firacode-light.woff2') format('woff2');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Fira Code';
-    src: url('/assets/fonts/firacode-regular.woff2') format('woff2');
+    src: url('/assets/fonts/fira-code/firacode-regular.woff2') format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Fira Code';
-    src: url('/assets/fonts/firacode-medium.woff2') format('woff2');
+    src: url('/assets/fonts/fira-code/firacode-medium.woff2') format('woff2');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Fira Code';
-    src: url('/assets/fonts/firacode-semibold.woff2') format('woff2');
+    src: url('/assets/fonts/fira-code/firacode-semibold.woff2') format('woff2');
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Fira Code';
-    src: url('/assets/fonts/firacode-bold.woff2') format('woff2');
+    src: url('/assets/fonts/fira-code/firacode-bold.woff2') format('woff2');
     font-weight: 700;
 }
